@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/nav_style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Navigation</title>
+
+</head>
+<body>
+    
+    <header id="top_of_page"></header>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <a href=""><img class="logo_img" src="assets/media/unix_logo.png" alt="UnixGuide Logo"></a>
+            </div>
+            <input type="radio" name="slide" id="menu">
+            <input type="radio" name="slide" id="cancel">
+            <ul class="nav_links">
+                <label class="nav_btns btn_cancel" for="cancel"><i class="fa fa-times"></i></label>
+                <li><a href="" class="active_nav">Home</a></li>
+                <li>
+                    <a class="desktop_item" href="">About</a>
+                    <input id="show_drop_menu" type="checkbox">
+                    <label class="mobile_item" for="show_drop_menu">About</label>
+                    <ul class="drop_menu">
+                        <li><a href="">Commands</a></li>
+                        <li><a href="">Directories</a></li>
+                        <li><a href="">Permissions</a></li>
+                        <li><a href="">Packages</a></li>
+                    </ul>
+                </li>
+                <li><a href="">History</a></li>
+                <li>
+                    <a class="desktop_item" href="">Types</a>
+                    <input id="show_mega_menu" type="checkbox">
+                    <label class="mobile_item" for="show_mega_menu">Types</label>
+                    <ul class="mega_links">
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                        <li><a href="">System</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Tutorial</a></li>
+                <li><a href="">Quiz</a></li>
+                <li><a href="">Authors</a></li>
+            </ul>
+            <div class="btn_sign_up">
+                <a href="">Sign Up</a>
+            </div>
+            <label class="nav_btns btn_menu" for="menu"><i class="fa fa-bars"></i></label>
+        </div>
+    </nav>
+
+    <marquee class="rotating_text" scrollamount="20">
+        <div class="main_div">
+            <div class="marquee_page_div">
+                <p class="marquee_page_title">Commands</p>
+                <a class="visit_link" href="">Visit Page</a>
+            </div>
+            <div class="empty_div"></div>
+            <div class="marquee_page_div">
+                <p class="marquee_page_title">Directories</p>
+                <a class="visit_link" href="">Visit Page</a>
+            </div>
+            <div class="empty_div"></div>
+            <div class="marquee_page_div">
+                <p class="marquee_page_title">Permissions</p>
+                <a class="visit_link" href="">Visit Page</a>
+            </div>
+            <div class="empty_div"></div>
+            <div class="marquee_page_div">
+                <p class="marquee_page_title">Packages</p>
+                <a class="visit_link" href="">Visit Page</a>
+            </div>
+        </div>
+    </marquee>
+
+</body>
+</html>
