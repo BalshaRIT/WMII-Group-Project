@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/media/unix_logo.png">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <script src="assets/java_script/script.js"></script>
+    <title>UnixGuide | Quiz</title>
+
+</head>
+<body onload="scrollFunction();">
+    
+    <header id="top-of-page"></header>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img class="logo-img" src="assets/media/unix_logo.png" alt="UnixGuide Logo"></a>
+            </div>
+            <input type="radio" name="slide" id="menu">
+            <input type="radio" name="slide" id="cancel">
+            <ul class="nav-links">
+                <label class="nav-btns btn-cancel" for="cancel"><i class="fa fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a class="desktop-item" href="about.html">About</a>
+                    <input id="show-drop-menu" type="checkbox">
+                    <label class="mobile-item" for="show-drop-menu">About</label>
+                    <ul class="drop-menu">
+                        <li><a href="commands.html">Commands</a></li>
+                        <li><a href="directories.html">Directories</a></li>
+                        <li><a href="permissions.html">Permissions</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html">History</a></li>
+                <li>
+                    <a class="desktop-item" href="types.html">Types</a>
+                    <input id="show-mega-menu" type="checkbox">
+                    <label class="mobile-item" for="show-mega-menu">Types</label>
+                    <ul class="mega-links">
+                        <li><a href="oracle_solaris.html">Oracle Solaris</a></li>
+                        <li><a href="darwin.html">Darwin</a></li>
+                        <li><a href="ibm_aix.html">IBM AIX</a></li>
+                        <li><a href="hp_ux.html">HP-UX</a></li>
+                        <li><a href="free_bsd.html">FreeBSD</a></li>
+                        <li><a href="net_bsd.html">NetBSD</a></li>
+                        <li><a href="xenix.html">Xenix</a></li>
+                        <li><a href="sgi_irix.html">SGI IRIX</a></li>
+                        <li><a href="tru64_unix.html">TRU64 UNIX</a></li>
+                        <li><a href="mac_os.html">macOS</a></li>
+                    </ul>
+                </li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a class="active-nav" href="quiz.html">Quiz</a></li>
+                <li><a href="authors.html">Authors</a></li>
+            </ul>
+            <div class="btn-sign-up">
+                <a href="">Sign Up</a>
+            </div>
+            <label class="nav-btns btn-menu" for="menu"><i class="fa fa-bars"></i></label>
+        </div>
+    </nav>
+
+    <div class="main-div">
+        <h1>Unix Quiz</h1>
+        <p class="center-section-txt">Quiz information.</p>
+        <form action="" method="post">
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 1:</label>
+            <br>
+            <input type="radio" id="oneA" name="one">
+            <label for="oneA">Answer A</label>
+            <br>
+            <input type="radio" id="oneB" name="one">
+            <label for="oneB">Answer B</label>
+            <br>
+            <input type="radio" id="oneC" name="one">
+            <label for="oneC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 2:</label>
+            <br>
+            <input type="radio" id="twoA" name="two">
+            <label for="twoA">Answer A</label>
+            <br>
+            <input type="radio" id="twoB" name="two">
+            <label for="twoB">Answer B</label>
+            <br>
+            <input type="radio" id="twoC" name="two">
+            <label for="twoC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 3:</label>
+            <br>
+            <input type="radio" id="threeA" name="three">
+            <label for="threeA">Answer A</label>
+            <br>
+            <input type="radio" id="threeB" name="three">
+            <label for="threeB">Answer B</label>
+            <br>
+            <input type="radio" id="threeC" name="three">
+            <label for="threeC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 4:</label>
+            <br>
+            <input type="radio" id="fourA" name="four">
+            <label for="fourA">Answer A</label>
+            <br>
+            <input type="radio" id="fourB" name="four">
+            <label for="fourB">Answer B</label>
+            <br>
+            <input type="radio" id="fourC" name="four">
+            <label for="fourC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 5:</label>
+            <br>
+            <input type="radio" id="fiveA" name="five">
+            <label for="fiveA">Answer A</label>
+            <br>
+            <input type="radio" id="fiveB" name="five">
+            <label for="fiveB">Answer B</label>
+            <br>
+            <input type="radio" id="fiveC" name="five">
+            <label for="fiveC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 6:</label>
+            <br>
+            <input type="radio" id="sixA" name="six">
+            <label for="sixA">Answer A</label>
+            <br>
+            <input type="radio" id="sixB" name="six">
+            <label for="sixB">Answer B</label>
+            <br>
+            <input type="radio" id="sixC" name="six">
+            <label for="sixC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 7:</label>
+            <br>
+            <input type="radio" id="sevenA" name="seven">
+            <label for="sevenA">Answer A</label>
+            <br>
+            <input type="radio" id="sevenB" name="seven">
+            <label for="sevenB">Answer B</label>
+            <br>
+            <input type="radio" id="sevenC" name="seven">
+            <label for="sevenC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 8:</label>
+            <br>
+            <input type="radio" id="eightA" name="eight">
+            <label for="eightA">Answer A</label>
+            <br>
+            <input type="radio" id="eightB" name="eight">
+            <label for="eightB">Answer B</label>
+            <br>
+            <input type="radio" id="eightC" name="eight">
+            <label for="eightC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 9:</label>
+            <br>
+            <input type="radio" id="nineA" name="nine">
+            <label for="nineA">Answer A</label>
+            <br>
+            <input type="radio" id="nineB" name="nine">
+            <label for="nineB">Answer B</label>
+            <br>
+            <input type="radio" id="nineC" name="nine">
+            <label for="nineC">Answer C</label>
+
+            <div class="border-div"></div>
+
+            <label class="question">Question 10:</label>
+            <br>
+            <input type="radio" id="tenA" name="ten">
+            <label for="tenA">Answer A</label>
+            <br>
+            <input type="radio" id="tenB" name="ten">
+            <label for="tenB">Answer B</label>
+            <br>
+            <input type="radio" id="tenC" name="ten">
+            <label for="tenC">Answer C</label>
+
+            <div class="border-div"></div>
+
+        </form>
+    </div>
+
+    <div class="div-back-button">
+        <a id="back-button" href="#top-of-page">&#9757;</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 UnixGuide | <a class="reference-link" href="references.html" target="_blank">References</a> | W&M Project</p>
+    </footer>
+    
+</body>
+</html>
