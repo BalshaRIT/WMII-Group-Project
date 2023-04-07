@@ -112,6 +112,10 @@ li {
     background-color: #61999F;
 }
 
+#invisible-link {
+    display: none;
+}
+
 .drop_menu {
     position: absolute;
     width: 100%;
@@ -344,7 +348,21 @@ footer {
         display: none;
     }
 
-    .mobile_item {
+    #invisible-link {
+        position: absolute;
+        left: 0px;
+        color: #CCB0D9;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease;
+    }
+
+    #invisible-link:hover {
+        color: #61999F;
+        background-color: inherit;
+    }
+
+    .mobile-item {
         display: block;
         padding-left: 20px;
         font-size: 20px;
@@ -355,8 +373,14 @@ footer {
         cursor: pointer;
     }
 
-    .mobile_item:hover {
+    .mobile-item:hover {
         background-color: #61999F;
+    }
+
+    .mobile-item:hover #invisible-link {
+        left: 150px;
+        visibility: visible;
+        opacity: 1;
     }
 
     .drop_menu {
@@ -406,9 +430,5 @@ footer {
     #show_mega_menu:checked ~ .mega_links {
         display: block;
         max-height: 100%;
-    }
-
-    .btn_sign_up a {
-        display: none;
     }
 }

@@ -113,6 +113,10 @@ li {
     background-color: #61999F;
 }
 
+#invisible-link {
+    display: none;
+}
+
 .drop-menu {
     position: absolute;
     width: 100%;
@@ -314,6 +318,20 @@ footer {
         display: none;
     }
 
+    #invisible-link {
+        position: absolute;
+        left: 0px;
+        color: #CCB0D9;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease;
+    }
+
+    #invisible-link:hover {
+        color: #61999F;
+        background-color: inherit;
+    }
+
     .mobile-item {
         display: block;
         padding-left: 20px;
@@ -327,6 +345,12 @@ footer {
 
     .mobile-item:hover {
         background-color: #61999F;
+    }
+
+    .mobile-item:hover #invisible-link {
+        left: 150px;
+        visibility: visible;
+        opacity: 1;
     }
 
     .drop-menu {
@@ -376,9 +400,5 @@ footer {
     #show-mega-menu:checked ~ .mega-links {
         display: block;
         max-height: 100%;
-    }
-
-    .btn-sign-up a {
-        display: none;
     }
 }

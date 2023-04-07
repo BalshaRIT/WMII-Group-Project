@@ -13,14 +13,3 @@ function scrollFunction() {
         makeAppear();
     };
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-    const div1 = document.querySelector('.div1');
-    div1.addEventListener('mouseover', function () {
-        div1.style.transform = 'translateY(-10px)';
-    });
-    div1.addEventListener('mouseout', function () {
-        div1.style.transform = 'translateY(0)';
-    });
-});
-
