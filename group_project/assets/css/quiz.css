@@ -267,6 +267,20 @@ footer {
     color: #61999F;
 }
 
+.btn1{
+    font-weight: 300;
+    background-color: #8a609c;
+    padding: 8px;
+    text-decoration: none;
+    color: #f2f2f2;
+    border-bottom: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+    border-radius: 10px;
+    border-left: 2px solid whitesmoke;
+}
+
+
+
 @media only screen and (max-width: 1000px) {    
     .nav-links {
         position: fixed;
