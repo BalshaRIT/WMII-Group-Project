@@ -110,10 +110,5 @@ footer {
 .reference-link {
     text-decoration: none;
     font-weight: bold;
-    color: white;
-    transition: all .5s;
-}
-
-.reference-link:hover {
     color: #61999F;
 }

@@ -113,7 +113,8 @@ li {
     background-color: #61999F;
 }
 
-#invisible-link {
+#invisible-about,
+#invisible-types {
     display: none;
 }
 
@@ -301,6 +302,14 @@ footer {
         display: block;
     }
 
+    i {
+        transition: all .5s ease;
+    }
+
+    i:hover {
+        color: #61999F;
+    }
+
     #menu:checked ~ .nav-links {
         left: 0%;
     }
@@ -308,7 +317,6 @@ footer {
     #menu:checked ~ .btn-menu {
         display: none;
     }
-
 
     #cancel:checked ~ .nav-links {
         left: -100%;
@@ -318,16 +326,16 @@ footer {
         display: none;
     }
 
-    #invisible-link {
+    #invisible-about,
+    #invisible-types {
         position: absolute;
-        left: 0px;
+        left: 150px;
         color: #CCB0D9;
-        visibility: hidden;
-        opacity: 0;
         transition: all .5s ease;
     }
 
-    #invisible-link:hover {
+    #invisible-about:hover,
+    #invisible-types:hover {
         color: #61999F;
         background-color: inherit;
     }
@@ -345,12 +353,6 @@ footer {
 
     .mobile-item:hover {
         background-color: #61999F;
-    }
-
-    .mobile-item:hover #invisible-link {
-        left: 150px;
-        visibility: visible;
-        opacity: 1;
     }
 
     .drop-menu {
@@ -394,6 +396,11 @@ footer {
     .mega-links li a {
         font-size: 18px;
         color: #fff;
+    }
+
+    #show-drop-menu:checked ~ #invisible-about,
+    #show-mega-menu:checked ~ #invisible-types {
+        display: inherit;
     }
 
     #show-drop-menu:checked ~ .drop-menu,
