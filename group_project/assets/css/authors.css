@@ -15,6 +15,8 @@ body {
 	animation: gradient 7s ease infinite;
 }
 
+
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -112,11 +114,9 @@ li {
     background-color: #61999F;
 }
 
-#invisible-about,
-#invisible-types {
+#invisible-link {
     display: none;
 }
-
 
 .drop-menu {
     position: absolute;
@@ -295,14 +295,6 @@ footer {
         display: block;
     }
 
-    i {
-        transition: all .5s ease;
-    }
-
-    i:hover {
-        color: #61999F;
-    }
-
     #menu:checked ~ .nav-links {
         left: 0%;
     }
@@ -310,6 +302,7 @@ footer {
     #menu:checked ~ .btn-menu {
         display: none;
     }
+
 
     #cancel:checked ~ .nav-links {
         left: -100%;
@@ -319,16 +312,16 @@ footer {
         display: none;
     }
 
-    #invisible-about,
-    #invisible-types {
+    #invisible-link {
         position: absolute;
-        left: 150px;
+        left: 0px;
         color: #CCB0D9;
+        visibility: hidden;
+        opacity: 0;
         transition: all .5s ease;
     }
 
-    #invisible-about:hover,
-    #invisible-types:hover {
+    #invisible-link:hover {
         color: #61999F;
         background-color: inherit;
     }
@@ -346,6 +339,12 @@ footer {
 
     .mobile-item:hover {
         background-color: #61999F;
+    }
+
+    .mobile-item:hover #invisible-link {
+        left: 150px;
+        visibility: visible;
+        opacity: 1;
     }
 
     .drop-menu {
@@ -391,14 +390,13 @@ footer {
         color: #fff;
     }
 
-    #show-drop-menu:checked ~ #invisible-about,
-    #show-mega-menu:checked ~ #invisible-types {
-        display: inherit;
-    }
-
     #show-drop-menu:checked ~ .drop-menu,
     #show-mega-menu:checked ~ .mega-links {
         display: block;
         max-height: 100%;
+    }
+
+    .btn-sign-up a {
+        display: none;
     }
 }
